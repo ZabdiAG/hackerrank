@@ -23,22 +23,6 @@ func matchingStrings(strs []string, queries []string) []int32 {
 	return result
 }
 
-// strings.Contains(s, substr string) bool
-// Custom implementation
-func contains(str, substr) bool {
-	if len(substr) > len(str) {
-		return false
-	}
-	for itSubstr, substrV := range substr {
-		valuesLeftToCondition := len(str) - itSubstr
-		if valuesLeftToCondition < len(substr) {
-			return false
-		}
-		for _, strV := range str {
-		}
-	}
-}
-
 func main() {
 	reader := bufio.NewReaderSize(os.Stdin, 1024*1024)
 
