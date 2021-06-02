@@ -20,3 +20,9 @@ Solving some problems in hackerrank
 [Problem link](https://www.hackerrank.com/challenges/jenny-subtrees/problem)  
 [Problem description](jenny-subtrees/problem.pdf)  
 [Solution(WIP)](jenny-subtrees/main.go)
+
+## Array manipulation(WIP)
+[Problem link](https://www.hackerrank.com/challenges/crush/problem)  
+[Problem description](jenny-subtrees/problem.pdf)  
+[Solution(WIP)](jenny-subtrees/main.go)  
+[Solution with goroutines(WIP)](jenny-subtrees/main_goroutines.go)  
