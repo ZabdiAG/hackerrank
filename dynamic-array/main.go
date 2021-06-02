@@ -21,10 +21,9 @@ import (
 func dynamicArray(n int32, queries [][]int32) []int32 {
 	// Write your code here
 	arr := make([][]int32, n)
-	var lastAnswer int32
+	lastAnswer := int32(0)
 	result := make([]int32, 0)
-	for i, v := range queries {
-		fmt.Printf("Query %d:", i)
+	for _, v := range queries {
 		idx := ((v[1] ^ lastAnswer) % n)
 		switch v[0] {
 		case 1:

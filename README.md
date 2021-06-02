@@ -11,6 +11,10 @@ Solving some problems in hackerrank
 [Problem description](rotate-left/problem.pdf)  
 [Solution](rotate-left/main.go)  
 
+## Dynamic Array
+[Problem link](https://www.hackerrank.com/challenges/dynamic-array/problem)  
+[Problem description](dynamic-array/problem.pdf)  
+[Solution](dynamic-array/main.go)  
 
 ## Jenny's Subtrees(WIP)
 [Problem link](https://www.hackerrank.com/challenges/jenny-subtrees/problem)  
