@@ -18,6 +18,10 @@ import (
  *  2. 2D_INTEGER_ARRAY queries
  */
 
+// TODO:
+// 10/16 test cases failed, pasing: [0, 1, 2, 3, 14, 15]
+// 4. OUTPUT: 7540746475, ( variant)
+// 7. TimeLimit exceded
 func arrayManipulation(n int32, queries [][]int32) int64 {
 	// Write your code here
 	arr := make([]int64, n)

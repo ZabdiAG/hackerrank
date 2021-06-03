@@ -18,6 +18,9 @@ import (
  *  2. 2D_INTEGER_ARRAY queries
  */
 
+// TODO: not working on testcases:
+// 9/16 testcases passed: [0, 1, 2, 3, 4, 5, 6, 14, 15]
+// All errors due to timeout exceeded
 func arrayManipulation(n int32, queries [][]int32) int64 {
 	// Write your code here
 	arr := make([]int64, n)
@@ -67,7 +70,6 @@ func main() {
 		}
 
 		if len(queriesRow) != 3 {
-			fmt.Printf("queriesRow: %v\n", queriesRow)
 			panic("Bad input")
 		}
 
