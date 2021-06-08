@@ -16,6 +16,11 @@ Solving some problems in hackerrank
 [Problem description](dynamic-array/problem.pdf)  
 [Solution](dynamic-array/main.go)  
 
+## Simple Text Editor
+[Problem link](https://www.hackerrank.com/challenges/simple-text-editor/problem)  
+[Problem description](simple-text-editor/problem.pdf)  
+[Solution](simple-text-editor/main.go)  
+
 ## Jenny's Subtrees(WIP)
 [Problem link](https://www.hackerrank.com/challenges/jenny-subtrees/problem)  
 [Problem description](jenny-subtrees/problem.pdf)  
