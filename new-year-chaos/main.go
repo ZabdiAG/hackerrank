@@ -10,28 +10,54 @@ import (
 )
 
 // TODO: end testcases not passing due to timeout
+// Implemented:
+//	- bubble sort, not working
+//	- Cocktail shaker sort, not working
 
 /*
  * Complete the 'minimumBribes' function below.
  *
  * The function accepts INTEGER_ARRAY q as parameter.
  */
-
 func minimumBribes(q []int32) {
 	bribes := 0
 	qbribes := make([]int, len(q))
-	for i := 1; i < len(q); i++ {
-		for j := 0; j < len(q)-i; j++ {
-			if q[j] > q[j+1] {
-				qbribes[q[j]-1]++
-				if qbribes[q[j]-1] > 2 || qbribes[q[j+1]-1] > 2 {
-					fmt.Printf("Too chaotic\n")
-					return
+	reverse := false
+	for i, j := 0, len(q)-1; i < len(q); {
+		if !reverse {
+			for x := 0; x < len(q)-i-1; x++ {
+				if q[x]-1 == int32(x) {
+					continue
 				}
-				q[j], q[j+1] = q[j+1], q[j]
-				bribes++
+				if q[x] > q[x+1] {
+					qbribes[q[x]-1]++
+					if qbribes[q[x]-1] > 2 {
+						fmt.Printf("Too chaotic\n")
+						return
+					}
+					q[x], q[x+1] = q[x+1], q[x]
+					bribes++
+				}
 			}
+			i++
+		} else {
+			for x := j; x > i; x-- {
+				if q[x]-1 == int32(x) {
+					continue
+				}
+				if q[x-1] > q[x] {
+					qbribes[q[x-1]-1]++
+					if qbribes[q[x-1]-1] > 2 {
+						fmt.Printf("Too chaotic\n")
+						return
+					}
+					q[x-1], q[x] = q[x], q[x-1]
+					bribes++
+				}
+			}
+			j--
 		}
+		reverse = !reverse
 	}
 	fmt.Printf("%d\n", bribes)
 }
